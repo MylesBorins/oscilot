@@ -1,0 +1,1 @@
+Some basic oscillators built with Baudio

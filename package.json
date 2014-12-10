@@ -1,0 +1,19 @@
+{
+  "name": "oscilot",
+  "version": "1.0.0",
+  "description": "api for some basic oscillators",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "baudio",
+    "music",
+    "oscillator"
+  ],
+  "author": "Myles Borins <myles.borins@gmail.com>",
+  "license": "MPLV2",
+  "dependencies": {
+    "baudio": "^2.1.2"
+  }
+}
