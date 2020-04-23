@@ -12,7 +12,6 @@
   "author": "Myles Borins <myles.borins@gmail.com>",
   "license": "MPL-2.0",
   "dependencies": {
-    "express": "^4.17.1",
     "fastify": "^2.13.1",
     "fastify-static": "^2.7.0",
     "node-osc": "^5.0.0",
