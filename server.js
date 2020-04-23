@@ -1,6 +1,4 @@
 'use strict'
-const { join } = require('path');
-
 const SocketIO = require('socket.io');
 const pino = require('pino');
 
@@ -10,16 +8,16 @@ const logger = pino({
   level: 'info'
 });
 
-const app = createStaticServer(join(__dirname, './public'));
+const app = createStaticServer();
 
 const io = new SocketIO(app.server);
 
 io.on('connection', (socket) => {
   logger.info('new session connected')
-  socket.on('message', function (m) {
-    logger.info(m);
+  socket.on('message', (message) => {
+    logger.info(`address: ${message.address} value: ${message.value}`)
   });
-  socket.on('disconnect', function () {
+  socket.on('disconnect', () => {
     logger.info('session disconnected');
   });
 });
