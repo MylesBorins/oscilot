@@ -14,7 +14,7 @@
   "dependencies": {
     "fastify": "^2.13.1",
     "fastify-static": "^2.7.0",
-    "node-osc": "^5.0.0",
+    "node-osc": "^5.1.0",
     "pino": "^6.2.0",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0"

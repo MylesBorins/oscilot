@@ -17,6 +17,7 @@ limitations under the License.
 'use strict'
 const SocketIO = require('socket.io');
 const pino = require('pino');
+const { Client } = require('node-osc');
 
 const { createStaticServer } = require('./lib/static-server.js');
 
@@ -28,10 +29,13 @@ const app = createStaticServer();
 
 const io = new SocketIO(app.server);
 
+const oscClient = new Client('127.0.0.1', 3333);
+
 io.on('connection', (socket) => {
   logger.info('new session connected')
   socket.on('message', (message) => {
     logger.info(`address: ${message.address} value: ${message.value}`)
+    oscClient.send(message.address, Number(message.value));
   });
   socket.on('disconnect', () => {
     logger.info('session disconnected');
