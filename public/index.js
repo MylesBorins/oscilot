@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const socket = globalThis.socket = io();
+const socket = io();
 
 const sliderOne = document.getElementById('slider-one');
 
