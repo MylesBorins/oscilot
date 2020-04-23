@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Myles Borins <myles.borins@gmail.com>",
-  "license": "MPL-2.0",
+  "license": "Apache-2.0",
   "dependencies": {
     "fastify": "^2.13.1",
     "fastify-static": "^2.7.0",
