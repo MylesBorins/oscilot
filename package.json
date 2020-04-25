@@ -5,8 +5,8 @@
   "description": "osc + socket demo",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js | pino-pretty",
+    "start": "node --experimental-modules server.mjs",
+    "dev": "nodemon --experimental-modules server.mjs | pino-pretty",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Myles Borins <myles.borins@gmail.com>",

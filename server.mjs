@@ -15,11 +15,11 @@ limitations under the License.
 */
 
 'use strict'
-const SocketIO = require('socket.io');
-const pino = require('pino');
-const { Client } = require('node-osc');
+import SocketIO from 'socket.io';
+import pino from 'pino';
+import { Client } from 'node-osc';
 
-const { createStaticServer } = require('./lib/static-server.js');
+import createStaticServer from './lib/static-server.cjs';
 
 const logger = pino({
   level: 'info'
