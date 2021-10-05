@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "fastify": "^2.15.1",
-    "fastify-static": "^2.7.0",
+    "fastify-static": "^4.2.4",
     "node-osc": "^5.1.0",
     "pino": "^6.2.0",
     "socket.io": "^2.4.0",
