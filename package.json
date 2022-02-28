@@ -12,15 +12,15 @@
   "author": "Myles Borins <myles.borins@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "fastify": "^2.15.1",
+    "fastify": "^3.27.2",
     "fastify-static": "^4.4.1",
-    "node-osc": "^5.1.0",
-    "pino": "^6.2.0",
-    "socket.io": "^2.4.0",
-    "socket.io-client": "^2.3.0"
+    "node-osc": "^6.1.14",
+    "pino": "^7.8.0",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3",
-    "pino-pretty": "^4.0.0"
+    "pino-pretty": "^7.5.1"
   }
 }

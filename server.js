@@ -27,7 +27,7 @@ const logger = pino({
 
 const app = createStaticServer();
 
-const io = new SocketIO(app.server);
+const io = SocketIO(app.server);
 
 const oscClient = new Client('127.0.0.1', 3333);
 
