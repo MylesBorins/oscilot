@@ -12,7 +12,7 @@
   "author": "Myles Borins <myles.borins@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "fastify": "^3.27.2",
+    "fastify": "^3.29.4",
     "fastify-static": "^4.4.1",
     "node-osc": "^6.1.14",
     "pino": "^7.8.0",
