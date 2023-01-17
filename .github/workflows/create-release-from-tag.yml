@@ -5,6 +5,9 @@ on:
 
 name: 'Create Release From Tag'
 
+permissions:
+  id-token: write
+
 jobs:
   create-github-release:
     name: Create GitHub Release
