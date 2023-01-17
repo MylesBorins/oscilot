@@ -1,6 +1,6 @@
 {
   "name": "oscilot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "osc + socket demo",
   "main": "index.js",
