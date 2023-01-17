@@ -6,13 +6,14 @@ on:
 name: 'Create Release From Tag'
 
 permissions:
-  id-token: write
   contents: write
 
 jobs:
   create-github-release:
     name: Create GitHub Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
