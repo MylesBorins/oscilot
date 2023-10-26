@@ -42,4 +42,6 @@ io.on('connection', (socket) => {
   });
 });
 
-app.listen(3000, (err) => console.error(err));
+app.listen({
+  port: 3000
+}, (err) => console.error(err));
